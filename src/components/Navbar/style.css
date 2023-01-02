@@ -1,0 +1,106 @@
+.navbar-container {
+    width: 1100px;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 25px;
+    box-sizing: border-box;
+}
+
+.navbar-container .navigation {
+    position: relative;
+    width: 100%;
+    display: flex;
+    gap: 10px;
+}
+
+.navbar-container :is(img, .navigation img) {
+    width: 35px;
+    margin-right: 24px;
+}
+
+.navbar-container img {
+    display: none;
+}
+
+.navbar-container .navigation img {
+    display: block;
+}
+
+.navbar-container .navigation a {
+    color: var(--color-first);
+    font-size: 16px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 2px;
+    background-image: linear-gradient(transparent 95%, var(--glb-color-second) 5%);
+    background-size: 0 100%;
+    background-repeat: no-repeat;
+    transition: all .3s ease-in-out;
+    animation: glitchText 0.4s linear;
+}
+
+.navbar-container .navigation a:hover {
+    background-size: 100% 100%;
+}
+
+.navbar-container .navigation .theme-selector {
+    position: absolute;
+    right: 0;
+    width: 30px;
+    height: 30px;
+    background-color: var(--glb-color-fifth);
+    padding: 5px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    box-sizing: border-box;
+}
+
+.navbar-container .toggle-navigation {
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+@media screen and (max-width: 768px) {
+    .navbar-container .navigation a {
+        display: none;
+    }
+
+    .navbar-container .navigation .theme-selector {
+        display: none;
+    }
+
+    .navbar-container.active .navigation a {
+        display: flex;
+    }
+
+    .navbar-container.active img {
+        display: block;
+    }
+
+    .navbar-container.active .navigation img {
+        display: none;
+    }
+
+    .navbar-container.active .navigation {
+        position: absolute;
+        padding: 25px;
+        top: 70px;
+        left: 0;
+        flex-direction: column;
+        background-color: var(--glb-color-fifth);
+        box-sizing: border-box;
+    }
+
+    .navbar-container.active .navigation .theme-selector {
+        display: flex;
+        bottom: 25px;
+        right: 25px;
+    }
+}

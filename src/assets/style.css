@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+:root {
+    /* Global Variables */
+    --glb-font-family: 'Open Sans', sans-serif;
+    --glb-color-first: #090909;
+    --glb-color-second: #5200ff;
+    --glb-color-third: #ececec;
+    --glb-color-fourth: #ffc400;
+    --glb-color-fifth: rgba(35, 35, 35, 0.11);
+}
+/* Theme: Dark */
+[data-theme="dark"] {
+    --background-color-first: var(--glb-color-first);
+    --color-first: var(--glb-color-third);
+    --hamburger-icon-child-color: var(--glb-color-third);
+}
+
+/* Theme: Light */
+[data-theme="light"] {
+    /*Empty*/
+    --background-color-first: var(--glb-color-third);
+    --color-first: var(--glb-color-first);
+    --hamburger-icon-child-color: var(--glb-color-first);
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    background-color: var(--background-color-first);
+    color: var(--color-first);
+    font-family: var(--glb-font-family);
+}
+
+.app {
+    display: flex;
+    justify-content: center;
+}
