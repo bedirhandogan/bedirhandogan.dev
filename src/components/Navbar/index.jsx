@@ -1,7 +1,7 @@
 import {LinkExternalIcon, MoonIcon, SunIcon, ThreeBarsIcon, XIcon} from "@primer/octicons-react";
 import useThemeSelector from "../../hooks/useThemeSelector";
 import logo from "../../assets/Logo.svg";
-import './style.css';
+import './styles.css';
 import {useState} from "react";
 
 function Navbar() {

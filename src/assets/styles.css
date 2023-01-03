@@ -7,13 +7,16 @@
     --glb-color-second: #5200ff;
     --glb-color-third: #ececec;
     --glb-color-fourth: #ffc400;
-    --glb-color-fifth: rgba(35, 35, 35, 0.11);
+    --glb-color-fifth: #0c0c0c;
+    --glb-color-sixth: #e5e3e3;
 }
 /* Theme: Dark */
 [data-theme="dark"] {
     --background-color-first: var(--glb-color-first);
     --color-first: var(--glb-color-third);
     --hamburger-icon-child-color: var(--glb-color-third);
+    --theme-selector-color: var(--glb-color-fifth);
+    --navigation-color: var(--glb-color-fifth);
 }
 
 /* Theme: Light */
@@ -22,6 +25,8 @@
     --background-color-first: var(--glb-color-third);
     --color-first: var(--glb-color-first);
     --hamburger-icon-child-color: var(--glb-color-first);
+    --theme-selector-color: var(--glb-color-sixth);
+    --navigation-color: var(--glb-color-sixth);
 }
 
 html, body {
@@ -34,5 +39,6 @@ html, body {
 
 .app {
     display: flex;
-    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }

@@ -51,7 +51,7 @@
     right: 0;
     width: 30px;
     height: 30px;
-    background-color: var(--glb-color-fifth);
+    background-color: var(--theme-selector-color);
     padding: 5px;
     border-radius: 5px;
     display: flex;
@@ -65,6 +65,12 @@
     height: 100%;
     display: flex;
     align-items: center;
+}
+
+@media screen and (max-width: 1100px) {
+    .navbar-container {
+        width: 100%;
+    }
 }
 
 @media screen and (max-width: 768px) {
@@ -94,7 +100,7 @@
         top: 70px;
         left: 0;
         flex-direction: column;
-        background-color: var(--glb-color-fifth);
+        background-color: var(--navigation-color);
         box-sizing: border-box;
     }
 
