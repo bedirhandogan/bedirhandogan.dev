@@ -1,0 +1,98 @@
+.repository {
+    background-color: rgba(255, 255, 255, 0.01);
+    backdrop-filter: blur(2px);
+    border: 1.5px solid rgba(128, 128, 128, 0.08);
+    padding: 15px;
+    width: 280px;
+    border-radius: 10px;
+}
+
+.repository .language {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.repository .language .circle {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.repository .language .circle.vue {
+    background-color: #41b883;
+}
+
+.repository .language .circle.css {
+    background-color: #563d7b;
+}
+
+.repository .language .circle.html {
+    background-color: #e14c26;
+}
+
+.repository .language .circle.javascript {
+    background-color: #efde5a;
+}
+
+.repository .language .circle.typescript {
+    background-color: #3177c5;
+}
+
+.repository .language .name {
+    display: none;
+    position: absolute;
+    top: 30px;
+    font-size: 13px;
+    text-transform: uppercase;
+    background-color: rgba(255, 255, 255, 0.01);
+    border: 1.5px solid rgba(128, 128, 128, 0.08);
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+.repository .language:hover > .name {
+    display: block;
+}
+
+.repository .name {
+    margin: 0;
+    font-weight: 200;
+    display: flex;
+    justify-content: space-between;
+}
+
+.repository .name div {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.repository .name div a {
+    text-decoration: none;
+    color: var(--color-first);
+}
+
+.repository .name div a:hover {
+    text-decoration: underline;
+}
+
+.repository .paragraph {
+    font-size: 14px;
+    color: rgba(128, 128, 128, 0.65);
+}
+
+.repository .details {
+    width: 100%;
+    display: flex;
+    gap: 10px;
+}
+
+.repository .details .detail {
+    display: flex;
+    align-items: center;
+    font-size: 13px;
+    gap: 10px;
+    color: #bbbaba;
+}

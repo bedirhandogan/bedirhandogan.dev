@@ -10,6 +10,7 @@
     --glb-color-fifth: #0c0c0c;
     --glb-color-sixth: #e5e3e3;
 }
+
 /* Theme: Dark */
 [data-theme="dark"] {
     --background-color-first: var(--glb-color-first);
@@ -17,16 +18,17 @@
     --hamburger-icon-child-color: var(--glb-color-third);
     --theme-selector-color: var(--glb-color-fifth);
     --navigation-color: var(--glb-color-fifth);
+    --work-preview-background-color: white;
 }
 
 /* Theme: Light */
 [data-theme="light"] {
-    /*Empty*/
     --background-color-first: var(--glb-color-third);
     --color-first: var(--glb-color-first);
     --hamburger-icon-child-color: var(--glb-color-first);
     --theme-selector-color: var(--glb-color-sixth);
     --navigation-color: var(--glb-color-sixth);
+    --work-preview-background-color: black;
 }
 
 html, body {
