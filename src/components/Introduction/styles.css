@@ -1,12 +1,13 @@
 .introduction-container {
-    width: 1100px;
+    width: 900px;
     height: calc(100vh - 70px);
     padding: 25px;
     box-sizing: border-box;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
-    gap: 10px;
+    flex-direction: column-reverse;
+    gap: 20px;
 }
 
 .introduction-container .about :is(.title, .paragraph) {
@@ -19,13 +20,27 @@
     text-transform: uppercase;
     color: var(--glb-color-second);
     font-size: 1rem;
+    text-align: center;
 }
 
 .introduction-container .about .paragraph {
     font-size: calc(1.1rem + .9vw) !important;
-    max-width: 500px;
     text-decoration: underline;
     text-underline-offset: 5px;
+    text-align: center;
+}
+
+.introduction-container .picture {
+    width: 200px;
+    height: 200px;
+    outline: 2px solid gray;
+    border-radius: 25px;
+}
+
+.introduction-container .picture img {
+    width: 200px;
+    height: 200px;
+    border-radius: 25px;
 }
 
 @media screen and (max-width: 1100px) {
@@ -37,15 +52,5 @@
 @media screen and (max-width: 910px) {
     .introduction-container .about .paragraph {
         max-width: 550px;
-    }
-}
-
-@media screen and (max-width: 450px){
-    .introduction-container {
-        flex-wrap: nowrap;
-        flex-direction: column;
-        justify-content: flex-start;
-        gap: 35px;
-        align-items: flex-start;
     }
 }
