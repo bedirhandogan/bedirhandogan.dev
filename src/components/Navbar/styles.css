@@ -59,6 +59,7 @@
     justify-content: center;
     gap: 5px;
     box-sizing: border-box;
+    cursor: pointer;
 }
 
 .navbar-container .toggle-navigation {
@@ -84,6 +85,7 @@
 
     .navbar-container.active .navigation a {
         display: flex;
+        font-size: 14px;
     }
 
     .navbar-container.active img {
