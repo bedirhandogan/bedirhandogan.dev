@@ -5,9 +5,9 @@
     /* Global Variables */
     --glb-font-family-first: 'Open Sans', sans-serif;
     --glb-font-family-second: 'Roboto Mono', monospace;
-    --glb-color-first: #090909;
+    --glb-color-first: 9, 9, 9;
     --glb-color-second: #5200ff;
-    --glb-color-third: #ececec;
+    --glb-color-third: 236, 236, 236;
     --glb-color-fourth: #ffc400;
     --glb-color-fifth: #0c0c0c;
     --glb-color-sixth: #e5e3e3;
@@ -36,8 +36,8 @@
 html, body {
     margin: 0;
     padding: 0;
-    background-color: var(--background-color-first);
-    color: var(--color-first);
+    background-color: rgb(var(--background-color-first));
+    color: rgb(var(--color-first));
     font-family: var(--glb-font-family-first);
 }
 
@@ -45,4 +45,13 @@ html, body {
     display: flex;
     align-items: center;
     flex-direction: column;
+}
+
+::-webkit-scrollbar {
+    width: 5px;
+    background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+    background: rgba(103, 103, 103, 0.1);
 }

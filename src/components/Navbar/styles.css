@@ -1,4 +1,7 @@
 .navbar-container {
+    position: sticky;
+    top: 0;
+    z-index: 1;
     width: 1100px;
     height: 70px;
     display: flex;
@@ -6,6 +9,8 @@
     justify-content: space-between;
     padding: 25px;
     box-sizing: border-box;
+    background-color: rgba(var(--background-color-first) 0.4);
+    backdrop-filter: blur(2px);
 }
 
 .navbar-container .navigation {
@@ -75,6 +80,10 @@
 }
 
 @media screen and (max-width: 768px) {
+    .navbar-container {
+        background-color: rgb(var(--background-color-first));
+    }
+
     .navbar-container .navigation a {
         display: none;
     }
