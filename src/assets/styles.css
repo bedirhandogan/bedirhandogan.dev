@@ -1,8 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
 
 :root {
     /* Global Variables */
-    --glb-font-family: 'Open Sans', sans-serif;
+    --glb-font-family-first: 'Open Sans', sans-serif;
+    --glb-font-family-second: 'Roboto Mono', monospace;
     --glb-color-first: #090909;
     --glb-color-second: #5200ff;
     --glb-color-third: #ececec;
@@ -36,7 +38,7 @@ html, body {
     padding: 0;
     background-color: var(--background-color-first);
     color: var(--color-first);
-    font-family: var(--glb-font-family);
+    font-family: var(--glb-font-family-first);
 }
 
 .app {

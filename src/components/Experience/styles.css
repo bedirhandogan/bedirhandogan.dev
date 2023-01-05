@@ -1,0 +1,61 @@
+.experience-container {
+    width: 1100px;
+    height: max-content;
+    padding: 25px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+}
+
+.experience-container .title {
+    font-weight: 200;
+    text-transform: uppercase;
+    color: var(--glb-color-second);
+    margin: 0 0 5px 0;
+    font-size: 1rem;
+}
+
+.experience-container .experience {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+    margin-bottom: 20px;
+}
+
+.experience-container .experience .title {
+    margin: 0;
+    color: var(--color-first);
+    text-transform: none;
+}
+
+.experience-container .experience .company {
+    font-size: 13px;
+    color: #a1a1a1;
+    font-family: var(--glb-font-family-second);
+}
+
+.experience-container .date-range {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 13px;
+    font-family: var(--glb-font-family-second);
+    color: #a1a1a1;
+}
+
+.experience-container :is(.company, .date-range) svg {
+    color: var(--color-first);
+    margin-right: 5px;
+}
+
+@media screen and (max-width: 1100px) {
+    .experience-container {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 910px){
+    /*.experience-container {*/
+    /*    margin-top: 35px;*/
+    /*}*/
+}
