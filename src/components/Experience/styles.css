@@ -7,14 +7,6 @@
     flex-direction: column;
 }
 
-.experience-container .title {
-    font-weight: 200;
-    text-transform: uppercase;
-    color: var(--glb-color-second);
-    margin: 0 0 5px 0;
-    font-size: 1rem;
-}
-
 .experience-container .experience {
     display: flex;
     flex-direction: column;

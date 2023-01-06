@@ -55,3 +55,10 @@ html, body {
 ::-webkit-scrollbar-thumb {
     background: rgba(103, 103, 103, 0.1);
 }
+
+h4 {
+    font-weight: 200;
+    text-transform: uppercase;
+    color: var(--glb-color-second);
+    font-size: 1rem;
+}

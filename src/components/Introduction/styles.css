@@ -10,17 +10,9 @@
     gap: 20px;
 }
 
-.introduction-container .about :is(.title, .paragraph) {
+.introduction-container .about .paragraph {
     margin: 0;
     padding: 0;
-}
-
-.introduction-container .about .title {
-    font-weight: 200;
-    text-transform: uppercase;
-    color: var(--glb-color-second);
-    font-size: 1rem;
-    text-align: center;
 }
 
 .introduction-container .about .paragraph {
