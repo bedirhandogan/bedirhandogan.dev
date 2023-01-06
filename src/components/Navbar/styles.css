@@ -44,7 +44,6 @@
     background-size: 0 100%;
     background-repeat: no-repeat;
     transition: all .3s ease-in-out;
-    animation: glitchText 0.4s linear;
 }
 
 .navbar-container .navigation a:hover {
