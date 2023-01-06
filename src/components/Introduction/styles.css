@@ -24,10 +24,17 @@
 }
 
 .introduction-container .about .paragraph {
-    font-size: calc(1.1rem + .9vw) !important;
+    font-size: calc(2rem + 1.5vw) !important;
+    text-align: center;
+    font-weight: 600;
+}
+
+.introduction-container .about .paragraph span {
+    background: -webkit-linear-gradient(left, var(--glb-color-second), pink);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
     text-decoration: underline;
     text-underline-offset: 5px;
-    text-align: center;
 }
 
 .introduction-container .picture {

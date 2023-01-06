@@ -4,9 +4,8 @@ function Introduction() {
     return (
         <div className="introduction-container">
             <div className="about">
-                <h4 className="title">Bedirhan Doğan</h4>
                 <p className="paragraph">
-                    Hi 👋, I am Front-end developer since 2020. I like it web designing and developed web application.
+                    I like it <span>open source</span> project development and <span>web application</span> build.
                 </p>
             </div>
         </div>
