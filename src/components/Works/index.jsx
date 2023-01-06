@@ -5,11 +5,15 @@ import {useEffect, useState} from "react";
 
 function Works() {
     const [repositories, setRepositories] = useState([]);
-    const [repoCount, setRepoCount] = useState(4);
+    const [repoCount, setRepoCount] = useState(0);
+
+    const showMoreClickHandler = () => setRepoCount(prevState => prevState + Math.floor(repositories.length / 4));
 
     useEffect(() => {
         getRepositoriesDetail().then(v => setRepositories(v));
-    }, []);
+        setRepoCount(Math.floor(repositories.length / 4));
+    }, [repositories.length]);
+
     return (
         <div className="works-container" id="works">
             <h4>Works</h4>
@@ -25,7 +29,8 @@ function Works() {
                     key={i}
                 />) }
             </div>
-            <div className="show-more-btn" style={repoCount === repositories.length ? {display: "none"} : {display: "block"}} onClick={() => setRepoCount(prevState => prevState + 4)}>Show More</div>
+            <div className="show-more-btn"
+                 style={repoCount >= repositories.length ? {display: "none"} : {display: "block"}} onClick={showMoreClickHandler}>Show More</div>
         </div>
     );
 }
