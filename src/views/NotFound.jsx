@@ -1,9 +1,7 @@
+import FourHundredFour from "../components/404";
+
 function NotFound() {
-    return (
-        <div>
-            404
-        </div>
-    )
+    return (<FourHundredFour />);
 }
 
 export default NotFound;

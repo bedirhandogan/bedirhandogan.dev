@@ -1,0 +1,34 @@
+.not-found-container {
+    background-color: rgb(--background-color-first);
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    flex-direction: column;
+}
+
+.not-found-container div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.not-found-container a {
+    color: rgb(var(--color-first));
+    font-weight: 200;
+}
+
+.not-found-container h6 {
+    margin: 0;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+@media screen and (max-width: 500px) {
+    .not-found-container {
+        font-size: 1rem;
+    }
+}
