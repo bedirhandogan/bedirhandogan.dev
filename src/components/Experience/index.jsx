@@ -3,7 +3,7 @@ import {BriefcaseIcon, CalendarIcon} from "@primer/octicons-react";
 
 function Experience() {
     return (
-        <div className="experience-container">
+        <div className="experience-container" id="experience">
             <h4 className="title">Experience</h4>
             <div className="experience">
                 <h3 className="title">Front-end Developer</h3>
