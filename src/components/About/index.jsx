@@ -2,7 +2,7 @@ import './styles.css';
 
 function About() {
     return (
-        <div className="about-container">
+        <div className="about-container" id="about">
             <h4>About</h4>
             <p className="paragraph">
                 My name is bedirhan, I am 19 years old. I am a high school student who continues his school life remotely.

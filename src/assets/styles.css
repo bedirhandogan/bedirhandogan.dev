@@ -39,6 +39,7 @@ html, body {
     background-color: rgb(var(--background-color-first));
     color: rgb(var(--color-first));
     font-family: var(--glb-font-family-first);
+    scroll-behavior: smooth;
 }
 
 .app {

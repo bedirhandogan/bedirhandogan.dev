@@ -11,7 +11,7 @@ function Works() {
         getRepositoriesDetail().then(v => setRepositories(v));
     }, []);
     return (
-        <div className="works-container">
+        <div className="works-container" id="works">
             <h4>Works</h4>
             <div className="works">
                 { repositories.slice(0, repoCount).map((v, i) => <GithubRepository

@@ -15,10 +15,10 @@ function Navbar() {
             <img src={logo} alt="logo" />
             <div className="navigation">
                 <img src={logo} alt="logo" />
-                <a href="#null" rel="noreferrer">Introduction</a>
-                <a href="#null" rel="noreferrer">About</a>
-                <a href="#null" rel="noreferrer">Experience</a>
-                <a href="#null" rel="noreferrer">Works</a>
+                <a href="#introduction">Introduction</a>
+                <a href="#about">About</a>
+                <a href="#experience">Experience</a>
+                <a href="#works">Works</a>
                 <div className="theme-selector" onClick={themeSelectorHandler}>
                     { theme === "dark" ? <SunIcon size={16} fill="#ffc400" /> : <MoonIcon size={16} fill="#5200ff" /> }
                 </div>
