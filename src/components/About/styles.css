@@ -1,0 +1,15 @@
+.about-container {
+    width: 900px;
+    padding: 25px;
+    box-sizing: border-box;
+}
+
+.about-container .paragraph {
+    font-size: 1rem;
+}
+
+@media screen and (max-width: 1100px) {
+    .about-container {
+        width: 100%;
+    }
+}
