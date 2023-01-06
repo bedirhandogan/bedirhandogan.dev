@@ -1,4 +1,4 @@
-import {MoonIcon, SunIcon, ThreeBarsIcon, XIcon} from "@primer/octicons-react";
+import {LinkExternalIcon, MoonIcon, SunIcon, ThreeBarsIcon, XIcon} from "@primer/octicons-react";
 import useThemeSelector from "../../hooks/useThemeSelector";
 import logo from "../../assets/Logo.svg";
 import './styles.css';
@@ -19,6 +19,8 @@ function Navbar() {
                 <a href="#about">About</a>
                 <a href="#experience">Experience</a>
                 <a href="#works">Works</a>
+                <a href="https://github.com/bedirhandogan" target="_blank" rel="noreferrer">Github <LinkExternalIcon size="16" fill="#737373FF" /></a>
+                <a href="https://www.linkedin.com/in/bedirhandogan" target="_blank" rel="noreferrer">Linkedin <LinkExternalIcon size="16" fill="#737373FF" /></a>
                 <div className="theme-selector" onClick={themeSelectorHandler}>
                     { theme === "dark" ? <SunIcon size={16} fill="#ffc400" /> : <MoonIcon size={16} fill="#5200ff" /> }
                 </div>
