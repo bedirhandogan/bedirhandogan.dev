@@ -1,10 +1,12 @@
 .repository {
     background-color: rgba(255, 255, 255, 0.01);
     backdrop-filter: blur(2px);
-    border: 1.5px solid rgba(128, 128, 128, 0.08);
+    border: 2px solid rgba(108, 108, 108, 0.1);
     padding: 15px;
-    width: 280px;
     border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .repository .language {
@@ -57,6 +59,7 @@
 }
 
 .repository .name {
+    all: unset;
     margin: 0;
     font-weight: 200;
     display: flex;
@@ -84,6 +87,8 @@
 }
 
 .repository .details {
+    position: relative;
+    bottom: 0;
     width: 100%;
     display: flex;
     gap: 10px;
