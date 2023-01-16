@@ -7,11 +7,11 @@ function Works() {
     const [repositories, setRepositories] = useState([]);
     const [repoCount, setRepoCount] = useState(0);
 
-    const showMoreClickHandler = () => setRepoCount(prevState => prevState + Math.floor(repositories.length / 4));
+    const showMoreClickHandler = () => setRepoCount(prevState => prevState + Math.floor(repositories.length / 2));
 
     useEffect(() => {
         getRepositoriesDetail().then(v => setRepositories(v));
-        setRepoCount(Math.floor(repositories.length / 4));
+        setRepoCount(Math.floor(repositories.length / 2));
     }, [repositories.length]);
 
     return (
