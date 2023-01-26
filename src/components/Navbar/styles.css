@@ -1,6 +1,6 @@
 .navbar-container {
-    position: sticky;
-    top: -1px;
+    position: fixed;
+    top: 0;
     z-index: 1;
     width: 900px;
     height: 70px;
@@ -10,7 +10,7 @@
     padding: 25px;
     box-sizing: border-box;
     background-color: rgba(var(--background-color-first), 0.4);
-    backdrop-filter: blur(10px);
+    backdrop-filter: blur(3.5px);
 }
 
 .navbar-container .navigation {
