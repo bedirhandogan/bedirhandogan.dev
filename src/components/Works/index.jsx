@@ -4,21 +4,22 @@ import getRepositoriesDetail from "../../services";
 import {useEffect, useState} from "react";
 
 function Works() {
-    const [repositories, setRepositories] = useState([]);
+    const [_repositories, _setRepositories] = useState([]);
     const [repoCount, setRepoCount] = useState(0);
+    const repos = _repositories.sort((a, b) => Date.parse(a.created_at) - Date.parse(b.created_at));
 
-    const showMoreClickHandler = () => setRepoCount(prevState => prevState + Math.floor(repositories.length / 2));
+    const showMoreClickHandler = () => setRepoCount(prevState => prevState + Math.floor(_repositories.length / 2));
 
     useEffect(() => {
-        getRepositoriesDetail().then(v => setRepositories(v));
-        setRepoCount(Math.floor(repositories.length / 2));
-    }, [repositories.length]);
+        getRepositoriesDetail().then(v => _setRepositories(v));
+        setRepoCount(Math.floor(_repositories.length / 2));
+    }, [_repositories.length]);
 
     return (
         <div className="works-container" id="works">
             <h4>Works</h4>
             <div className="works">
-                { repositories.slice(0, repoCount).map((v, i) => <GithubRepository
+                { repos.reverse().slice(0, repoCount).map((v, i) => <GithubRepository
                     name={v.name}
                     description={v.description}
                     url={v.html_url}
@@ -30,7 +31,7 @@ function Works() {
                 />) }
             </div>
             <div className="show-more-btn"
-                 style={repoCount >= repositories.length ? {display: "none"} : {display: "block"}} onClick={showMoreClickHandler}>Show More</div>
+                 style={repoCount >= _repositories.length ? {display: "none"} : {display: "block"}} onClick={showMoreClickHandler}>Show More</div>
         </div>
     );
 }
