@@ -1,5 +1,5 @@
 .navbar-container {
-    position: fixed;
+    position: sticky;
     top: 0;
     z-index: 1;
     width: 900px;
