@@ -10,7 +10,7 @@ function GithubRepository({name, description, url, star, watch, forks, language}
                         <a href={url} target="_blank" rel="noreferrer">{name}</a>
                     </div>
                     <div className="language">
-                        <div className={`circle ${language.toLowerCase()}`}></div>
+                        <div className={`circle ${language?.toLowerCase()}`}></div>
                         <div className="name">{language}</div>
                     </div>
                 </h4>
