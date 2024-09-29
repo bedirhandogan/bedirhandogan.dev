@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Edu+QLD+Beginner:wght@400..700&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&display=swap');
+
+:root {
+   --ff-roboto-serif: 'Roboto Serif', serif;
+   --ff-roboto-mono: 'Roboto Mono', monospace;
+   --ff-edu-qld-beginner: 'Edu QLD Beginner', sans-serif;
+
+   --color-gray: #5f5f5f;
+   --color-white: #f4f4f4;
+}
+
+html,
+body {
+   width: 100%;
+   margin: 0;
+   font-family: var(--ff-roboto-mono);
+   color: var(--color-gray);
+   background-color: var(--color-white);
+   background-image: url("./images/noise.png");
+   background-size: contain;
+   display: flex;
+   justify-content: center;
+}
+
+#app {
+   width: 768px;
+   height: 100vh;
+   border-left: 1px solid #E7E7E7;
+   border-right: 1px solid #E7E7E7;
+   padding: 15px;
+   box-sizing: border-box;
+}
