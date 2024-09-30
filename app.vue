@@ -6,5 +6,7 @@ import '@/assets/styles.css';
    <div id="app">
       <Header />
       <Introduction />
+      <BackgroundElement type="text" />
+      <BackgroundElement type="figure" />
    </div>
 </template>

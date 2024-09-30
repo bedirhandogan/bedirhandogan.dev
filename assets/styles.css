@@ -34,6 +34,7 @@ body * {
 }
 
 #app {
+   position: relative;
    width: 768px;
    height: 100vh;
    border-left: 1px solid var(--color-border);
