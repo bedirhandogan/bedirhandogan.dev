@@ -5,5 +5,6 @@ import '@/assets/styles.css';
 <template>
    <div id="app">
       <Header />
+      <Introduction />
    </div>
 </template>
