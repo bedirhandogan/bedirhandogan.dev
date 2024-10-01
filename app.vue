@@ -8,5 +8,6 @@ import '@/assets/styles.css';
       <Introduction />
       <BackgroundElement type="text" />
       <BackgroundElement type="figure" />
+      <Works />
    </div>
 </template>
