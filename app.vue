@@ -9,5 +9,6 @@ import '@/assets/styles.css';
       <BackgroundElement type="text" />
       <BackgroundElement type="figure" />
       <Works />
+      <Footer />
    </div>
 </template>
