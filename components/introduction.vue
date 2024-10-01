@@ -10,27 +10,33 @@
       </p>
 
       <div class="socials">
-         <a
-            >Github
-            <img
-               alt="link external"
-               src="../assets/images/link-external-icon.svg"
-            />
-         </a>
-         <a
-            >Linkedin
-            <img
-               alt="link external"
-               src="../assets/images/link-external-icon.svg"
-            />
-         </a>
-         <a
-            >Twitter
-            <img
-               alt="link external"
-               src="../assets/images/link-external-icon.svg"
-            />
-         </a>
+         <Tooltip text="View Github account">
+            <a
+               >Github
+               <img
+                  alt="link external"
+                  src="../assets/images/link-external-icon.svg"
+               />
+            </a>
+         </Tooltip>
+         <Tooltip text="View Linkedin account">
+            <a
+               >Linkedin
+               <img
+                  alt="link external"
+                  src="../assets/images/link-external-icon.svg"
+               />
+            </a>
+         </Tooltip>
+         <Tooltip text="View Instagram account">
+            <a
+               >Instagram
+               <img
+                  alt="link external"
+                  src="../assets/images/link-external-icon.svg"
+               />
+            </a>
+         </Tooltip>
       </div>
    </div>
 </template>
