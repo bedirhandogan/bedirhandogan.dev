@@ -10,11 +10,13 @@
          </div>
       </div>
 
-      <a
-         class="contact-button"
-         href="mailto:contact@bedirhandogan.dev"
-         data-mail="contact@bedirhandogan.dev"
-      ></a>
+      <Tooltip text="Email address for contact.">
+         <a
+            class="contact-button"
+            href="mailto:contact@bedirhandogan.dev"
+            data-mail="contact@bedirhandogan.dev"
+         />
+      </Tooltip>
    </div>
 </template>
 
@@ -98,3 +100,4 @@
    }
 }
 </style>
+<script setup></script>
