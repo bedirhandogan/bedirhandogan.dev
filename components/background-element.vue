@@ -15,12 +15,7 @@ export default {
       <span>Hello World</span> • <span>Hola Mundo</span>
    </div>
    <div class="figure" v-if="type === 'figure'">
-      <NuxtImg
-         preload
-         src="/images/dragon-figure.webp"
-         width="268"
-         height="517"
-      />
+      <img src="../assets/images/dragon-figure.webp" alt="dragon figure" />
    </div>
 </template>
 
@@ -64,8 +59,10 @@ export default {
       position: fixed;
    }
 
-   @media (max-width: 768px) {
-      height: 400px;
+   img {
+      @media (max-width: 768px) {
+         height: 450px;
+      }
    }
 }
 </style>
