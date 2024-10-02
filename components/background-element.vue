@@ -14,14 +14,7 @@ export default {
       <span>Merhaba Dünya</span> • <span>你好世界</span> •
       <span>Hello World</span> • <span>Hola Mundo</span>
    </div>
-   <div class="figure" v-if="type === 'figure'">
-      <img
-         src="../assets/images/dragon-figure.webp"
-         width="268"
-         height="517"
-         alt="dragon figure"
-      />
-   </div>
+   <div class="dragon-figure" v-if="type === 'figure'" />
 </template>
 
 <style scoped>
@@ -53,12 +46,15 @@ export default {
    }
 }
 
-.figure {
+.dragon-figure {
    position: absolute;
    top: 50%;
    right: calc(-268px / 2);
    transform: translateY(-50%);
    user-select: none;
+   background-image: url('../assets/images/dragon-figure.webp');
+   width: 268px;
+   height: 517px;
 
    @media (max-width: 1024px) {
       position: fixed;
