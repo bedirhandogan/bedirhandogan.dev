@@ -12,6 +12,9 @@
       <div class="socials">
          <Tooltip text="View Github account">
             <a
+               href="https://github.com/bedirhandogan"
+               target="_blank"
+               data-row="1"
                >Github
                <img
                   alt="link external"
@@ -21,6 +24,9 @@
          </Tooltip>
          <Tooltip text="View Linkedin account">
             <a
+               href="https://www.linkedin.com/in/bedirhandogan"
+               target="_blank"
+               data-row="2"
                >Linkedin
                <img
                   alt="link external"
@@ -28,9 +34,9 @@
                />
             </a>
          </Tooltip>
-         <Tooltip text="View Instagram account">
-            <a
-               >Instagram
+         <Tooltip text="View Twitter account">
+            <a href="https://x.com/bedirhandev" target="_blank" data-row="3"
+               >Twitter
                <img
                   alt="link external"
                   src="../assets/images/link-external-icon.svg"
@@ -76,6 +82,7 @@
       gap: 10px;
       flex-wrap: wrap;
       margin-top: 10px;
+      z-index: 2;
 
       a {
          font-family: var(--ff-roboto-serif);
@@ -86,7 +93,9 @@
          padding: 7px;
          cursor: pointer;
          border: 1px solid var(--color-border);
+         color: var(--color-gray);
          transition: all 200ms;
+         text-decoration: none;
 
          @media (max-width: 425px) {
             font-size: 0.68rem;
@@ -96,7 +105,7 @@
             background-color: var(--color-border);
          }
 
-         &:nth-of-type(1) {
+         &[data-row='1'] {
             background-color: var(--color-border);
 
             &:hover {
@@ -113,3 +122,4 @@
    }
 }
 </style>
+<script setup></script>
