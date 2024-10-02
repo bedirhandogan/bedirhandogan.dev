@@ -1,25 +1,10 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
-
-import path from 'path';
-import fs from 'fs';
-
-const imagesDirectory = path.join(__dirname, 'assets/images');
-
-function getPreloadLinks(
-   directory: string,
-): Array<{ rel: string; as: 'image'; href: string }> {
-   return fs
-      .readdirSync(directory)
-      .filter((file: string) => /\.(png|jpe?g|gif|webp)$/.test(file))
-      .map((file: string) => ({
-         rel: 'preload',
-         as: 'image',
-         href: `/images/${file}`,
-      }));
-}
-
 export default defineNuxtConfig({
    app: {
+      htmlAttrs: {
+          lang: 'en',
+        },
+      },
       head: {
          link: [
             {
@@ -39,7 +24,6 @@ export default defineNuxtConfig({
                as: 'image',
                href: '../assets/images/dragon-figure.webp',
             },
-            ...getPreloadLinks(imagesDirectory),
          ],
          title: "Bedirhan Doğan's personal website",
          meta: [
