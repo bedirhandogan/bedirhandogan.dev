@@ -1,11 +1,10 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
    app: {
-      htmlAttrs: {
-          lang: 'en',
-        },
-      },
       head: {
+         htmlAttrs: {
+            lang: 'en',
+         },
          link: [
             {
                rel: 'preload',
@@ -69,7 +68,6 @@ export default defineNuxtConfig({
          ],
       },
    },
-
    devtools: {
       enabled: true,
    },
