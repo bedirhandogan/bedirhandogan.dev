@@ -28,7 +28,7 @@
    height: 50px;
    border-top: 1px solid var(--color-border);
    border-bottom: 1px solid var(--color-border);
-   background-image: url('../assets/images/header-cols-effect.png');
+   background-image: url('../assets/images/header-cols-effect.webp');
    display: flex;
    gap: 50px;
    align-items: center;

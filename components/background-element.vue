@@ -15,7 +15,7 @@ export default {
       <span>Hello World</span> • <span>Hola Mundo</span>
    </div>
    <div class="figure" v-if="type === 'figure'">
-      <img src="../assets/images/dragon-figure.png" alt="dragon figure" />
+      <img src="../assets/images/dragon-figure.webp" alt="dragon figure" />
    </div>
 </template>
 
