@@ -5,6 +5,10 @@ export default defineNuxtConfig({
          title: "Bedirhan Doğan's personal website",
          meta: [
             {
+               name: 'google-site-verification',
+               content: 'JqVtbTr52TN2dp72YsTmh0r17MD69XqMSo-SeU5Ve28',
+            },
+            {
                property: 'og:title',
                content: "Bedirhan Doğan's personal website",
             },
